@@ -61,7 +61,7 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Verify Info :-
-VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
+VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "teraboxlinks.com") # shortlink domain without https://
@@ -69,10 +69,10 @@ SHORTLINK_API = environ.get("SHORTLINK_API", "4b7ded045ff9b38818660f6f96995288d6
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/+7ehnJA3aMb84OGNl") # how to open link 
 
 # Website Info:
-WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or False
+WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
 
 # If Website Url Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-WEBSITE_URL = environ.get("WEBSITE_URL", "electrical-manya-era-file-store-90f40de7.koyeb.app/") 
+WEBSITE_URL = environ.get("WEBSITE_URL", "") 
 
 # File Stream Config
 STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
@@ -85,5 +85,5 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "")
+URL = environ.get("URL", "electrical-manya-era-file-store-90f40de7.koyeb.app/")
 
