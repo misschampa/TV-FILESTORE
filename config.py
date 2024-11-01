@@ -85,5 +85,5 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "")
+URL = environ.get("URL", "electrical-manya-era-file-store-90f40de7.koyeb.app/")
 
