@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org/file/d57d6f83abb6b8d0efb02.jpg" alt="ERA FILE STORE BOT Logo">
+  <img src="" alt="ERA FILE STORE BOT Logo">
 </p>
 <h1 align="center">
   ERA FILE STORE BOT
