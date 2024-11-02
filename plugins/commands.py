@@ -502,28 +502,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
 # Please see < https://github.com/IamDvis/DV-FILESTORE/blob/master/LICENSE >
 
         
-            # Buttons and Reply Markup
+        # Encode URLs
+        download_url = f"https://example.com/download?file={quote(download)}"
+        stream_url = f"https://example.com/stream?file={quote(stream)}"
+        
+        try:
             button = [[
-                InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
-                InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
+                InlineKeyboardButton("🚀 Fast Download 🚀", url=download_url),
+                InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream_url)
             ]]
             reply_markup = InlineKeyboardMarkup(button)
-            
-            # Message with Button
+        
             await log_msg.reply_text(
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᴇ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=reply_markup
             )
-            
-            # Adding WebAppInfo Button
+        
             button.append([
-                InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))
+                InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream_url))
             ])
             reply_markup = InlineKeyboardMarkup(button)
-            
-            # Final message
+        
             await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
@@ -531,7 +532,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup
             )
         except Exception as e:
-            print(f"Error: {e}")  # Check the specific error message
+            print(f"Error: {e}")
             await query.answer(f"☣ something went wrong\n\n{e}", show_alert=True)
 
 # This file is part of < https://github.com/IamDvis/DV-FILESTORE > project,
