@@ -501,24 +501,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
 # and is released under the MIT License.
 # Please see < https://github.com/IamDvis/DV-FILESTORE/blob/master/LICENSE >
 
+        try:
+            # Buttons and Reply Markup
             button = [[
-                InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
+                InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
                 InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
             ]]
-            reply_markup=InlineKeyboardMarkup(button)
+            reply_markup = InlineKeyboardMarkup(button)
+            
+            # Message with Button
             await log_msg.reply_text(
-                text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
+                text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᴇ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=reply_markup
             )
-            button = [[
-                InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
-            ],[
+            
+            # Adding WebAppInfo Button
+            button.append([
                 InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))
-            ]]
-            reply_markup=InlineKeyboardMarkup(button)
+            ])
+            reply_markup = InlineKeyboardMarkup(button)
+            
+            # Final message
             await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
@@ -526,9 +531,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup
             )
         except Exception as e:
-            print(e)  # print the error message
-            await query.answer(f"☣something went wrong\n\n{e}", show_alert=True)
-            return
+            print(f"Error: {e}")  # Check the specific error message
+            await query.answer(f"☣ something went wrong\n\n{e}", show_alert=True)
 
 # This file is part of < https://github.com/IamDvis/DV-FILESTORE > project,
 # and is released under the MIT License.
