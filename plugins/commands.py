@@ -501,7 +501,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 # and is released under the MIT License.
 # Please see < https://github.com/IamDvis/DV-FILESTORE/blob/master/LICENSE >
 
-        try:
+        
             # Buttons and Reply Markup
             button = [[
                 InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
