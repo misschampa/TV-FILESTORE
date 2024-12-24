@@ -5,7 +5,7 @@
   ERA FILE STORE BOT
 </h1>
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+DV-FILESTORE;A+Highly+Advance+File+Store+Bot;Made+By+tg-@OfficialDurgesh!;With+Clone+Feature+Stream/Download+Link;Custom+Url+Shortner+Auto+Delete+Feature;A+Bot+With+Fully+Advanced+Feature!;Must+Give+Credit+To+Dvis;Because+He+Public+The+Paid+Repo;Thank+You!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+DV-FILESTORE;A+Highly+Advance+File+Store+Bot;Made+By+tg-@DvisDmBot!;With+Clone+Feature+Stream/Download+Link;Custom+Url+Shortner+Auto+Delete+Feature;A+Bot+With+Fully+Advanced+Feature!;Must+Give+Credit+To+Dvis;Because+He+Public+The+Paid+Repo;Thank+You!)
 </p>
 
 
@@ -86,13 +86,13 @@
 
 <b><details><summary>Tap On Me For See Credit</summary>
 
-💝 Credit Goes To [𝐂𝐔𝐓𝐈𝐄 𝐃𝐕](https://telegram.me/OfficialDurgesh)
+💝 Credit Goes To [𝗗𝗩𝗜𝗦](https://t.me/DvisDmBot)
 
-🖍️ This Code Is Fully Written Or Coded And Public By [𝐂𝐔𝐓𝐈𝐄 𝐃𝐕](https://telegram.me/OfficialDurgesh) So Don't Forgot To Give Credit
+🖍️ This Code Is Fully Written Or Coded And Public By [𝗗𝗩𝗜𝗦](https://t.me/DvisDmBot) So Don't Forgot To Give Credit
 
 💖 And Thank You So Much To All Who Help In This Journey 💕
 
-Copyright ©️ [𝐂𝐔𝐓𝐈𝐄 𝐃𝐕](https://telegram.me/OfficialDurgesh)
+Copyright ©️ [𝗗𝗩𝗜𝗦](https://t.me/DvisDmBot)
 
 </b>
 </details>
