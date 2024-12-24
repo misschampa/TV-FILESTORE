@@ -48,7 +48,7 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 
 📚 ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a>
 
-🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/OfficialDurgesh>𝐂𝐔𝐓𝐈𝐄 𝐃𝐕</a>
+🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/DvisDmBot>𝗗𝗩𝗜𝗦</a>
 
 👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: <a href=https://t.me/+7ehnJA3aMb84OGNl>𝐄𝐑𝐀 𝐒𝐮𝐩𝐩𝐨𝐫𝐭</a>
 
